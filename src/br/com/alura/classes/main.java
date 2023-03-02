@@ -10,7 +10,8 @@ public class main {
 
 	public static void main(String[] args) throws URISyntaxException, Exception, InterruptedException {
 		
-		String url = "https://imdb-api.com/en/API/Top250Movies/k_eshudr5g";
+		String key ="key";
+		String url = "https://imdb-api.com/en/API/Top250Movies/" + key;
 		 HttpRequest request = HttpRequest.newBuilder()
 	                .uri(new URI(url))
 	                .GET()
